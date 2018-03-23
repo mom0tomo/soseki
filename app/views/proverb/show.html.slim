@@ -6,10 +6,11 @@
 
 main.container
 	.container__main
-		.container__main-text
+		.container__main-item__text
 			p
 	  		= @proverb
-
+			div.container__main-item__btn
+				= fa_icon 'heart', class: "container__main-item__btn__icon__heart"
 == render 'sns'
 
 == render 'footer'

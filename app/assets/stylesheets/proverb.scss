@@ -37,8 +37,18 @@ body {
 		top: 50%;
 		left: 50%;
   	transform: translateY(-50%) translateX(-50%);
-		&-text {
+		&-item {
+			&__text {
 			text-align: center;
+			}
+			&__btn {
+				padding-top: 20px;
+				&__icon {
+					&__heart {
+						color: #ffccdd;
+					}
+				}
+			}
 		}
 	}
 	&__bottom {
