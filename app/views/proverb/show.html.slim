@@ -2,10 +2,12 @@
 - set_meta_tags keywords: '夏目漱石,名文,名言'
 - set_meta_tags description: 'Sosekiは夏目漱石の名言を毎日ひとつずつ表示するサービスです'
 
- = render partial: 'proverb/header'
+== render 'header'
 
-section.container
+main.container
 	.container__main
 		.container__main-text
 			p
 	  		= @proverb
+
+== render 'footer'
