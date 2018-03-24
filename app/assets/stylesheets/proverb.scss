@@ -1,13 +1,19 @@
 // Place all the styles related to the proverb controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #666062;
+$light-gray: #ccc0c4;
+$white: #fff;
+$pink: #fff0f5;
+$light-pink: #ffccdd;
+
 body {
 	font-family: "AdobeGaramondW01-Regula", "リュウミン R-KL", "Ryumin Regular KL", "RyuminPro-Regular", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 .header {
-	background-color: #666062;
-	color: #fff;
+	background-color: $gray;
+	color: $white;
 	padding: 20px;
 	display: flex;
 	&-item {
@@ -20,7 +26,7 @@ body {
 				text-align: right;
 			}
 			&__icon__heart {
-				color: #fff0f5;
+				color: $pink;
 				padding-left: 8px;
 			}
 		}
@@ -45,7 +51,7 @@ body {
 				padding-top: 20px;
 				&__icon {
 					&__heart {
-						color: #ffccdd;
+						color: $light-pink;
 					}
 				}
 			}
@@ -62,7 +68,7 @@ body {
 		&-item {
 			padding: 10px;
 			&:hover {
-				color: #ccc0c4;
+				color: $light-gray;
 				cursor: pointer;
 			}
 		}
@@ -70,8 +76,8 @@ body {
 }
 
 .footer {
-	background-color: #656565;
-	color: #fff;
+	background-color: $gray;
+	color: $white;
 	padding: 15px;
 	position: fixed;
  	bottom: 0;
