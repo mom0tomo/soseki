@@ -1,16 +1,12 @@
-- set_meta_tags title: '夏目漱石の名文'
-- set_meta_tags keywords: '夏目漱石,名文,名言'
-- set_meta_tags description: 'Sosekiは夏目漱石の名言を毎日ひとつずつ表示するサービスです'
-
-== render 'header'
+== render 'layouts/head'
+== render 'layouts/header'
 
 main.container
-	.container__main
-		.container__main-item__text
-			p
-	  		= @proverb
-			div.container__main-item__btn
-				= fa_icon 'heart', class: "container__main-item__btn__icon__heart"
-== render 'sns'
-
-== render 'footer'
+  .container__main
+    .container__main-item__text
+      p
+        = @proverb
+      div.container__main-item__btn
+        = fa_icon 'heart', class: "container__main-item__btn__icon__heart"
+== render 'layouts/sns'
+== render 'layouts/footer'
