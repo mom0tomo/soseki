@@ -1,4 +1,10 @@
 header.header
   .header-item__logo Soseki
-  .header-item__btn__like Your Like List
-  = fa_icon 'heart', class: "header-item__btn__icon__heart"
+  - if logged_in?
+    .header-item__btn__like Your Like List
+    = fa_icon 'heart', class: "header-item__btn__icon__heart"
+  - else
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-right
+      li
+        = link_to 'Login with twitter', '/auth/:provider/callback'

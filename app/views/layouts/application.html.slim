@@ -9,11 +9,6 @@ html
   body
     = yield
 
-
-#bs-example-navbar-collapse-1.collapse.navbar-collapse
-  ul.nav.navbar-nav.navbar-right
-    li
-    	= link_to 'Twitterでログイン', '/auth/:provider/callback'
 .container
   - if flash[:notice]
   	.alert.alert-success
