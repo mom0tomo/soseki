@@ -56,4 +56,5 @@ group :test do
 end
 
 group :production do
+  gem 'uglifier'
 end
