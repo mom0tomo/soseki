@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'proverb#show'
 
   get 'auth/:provider/callback' => 'sessions#create'
+  resources :user
 end
