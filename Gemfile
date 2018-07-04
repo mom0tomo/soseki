@@ -1,4 +1,4 @@
-ruby '2.4.3'
+ruby '2.5.1'
 
 source 'https://rubygems.org'
 
@@ -14,6 +14,7 @@ gem 'meta-tags'
 gem 'font-awesome-rails'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'active_decorator'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
