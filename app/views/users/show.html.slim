@@ -4,6 +4,9 @@
 main.container
   .container__main
     .container__main-item__text
-      p User Name: #{@user.name}
+      div User Name: #{@user.name}
+      div
+        = image_tag @user.image_url, size: 16, alt:'アイコン'
+
 == render 'layouts/sns'
 == render 'layouts/footer'

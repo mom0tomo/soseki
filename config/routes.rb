@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'proverb/show'
-  root to: 'proverb#show'
+  root 'home#index'
 
+  # omniauth
   get 'auth/:provider/callback' => 'sessions#create'
-  resources :user
+
+  resources :users, controller: :users, only: :show do
+    resources :proverbs, controller: :proverbs, only: [:index, :show]
+  end
 end
