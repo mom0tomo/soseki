@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ProverbController, type: :controller do
+RSpec.describe ProverbsController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
