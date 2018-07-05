@@ -24,6 +24,9 @@ staging:
 
 production:
   <<: *default
+  host: <%= ENV['DATABASE_HOST'].presence || 'localhost' %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
   url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV['DB_POOL'] || ENV['MAX_THREADS'] || 5 %>
   statement_limit: <%= ENV['STATEMENT_LIMIT'].presence || 1000 %>
