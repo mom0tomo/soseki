@@ -5,9 +5,8 @@ main.container
   .container__main
     .container__main-item__text
       p
-        = @proverb
-      div.container__main-item__btn
-        = fa_icon 'heart', class: "container__main-item__btn__icon__heart"
-
+        = @proverb.todays_proverb
+    input#user_id name='user_id' type='hidden' value='3'
+    == render 'like'
 == render 'layouts/sns'
 == render 'layouts/footer'

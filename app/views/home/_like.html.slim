@@ -1,0 +1,5 @@
+.container__main-item__btn
+  = form_for(user) do |f|
+    = hidden_field_tag :user_id, @user.id
+    = hidden_field_tag :proverb_id, @proverb.id
+  / i.fa.fa-heart.container__main-item__btn__icon__heart
