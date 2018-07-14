@@ -1,9 +1,6 @@
 class ProverbsController < ApplicationController
+
   def index
-
-  end
-
-  def show
-
+    @proverbs = 'proverbs'
   end
 end

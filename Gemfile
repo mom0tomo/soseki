@@ -25,6 +25,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '~> 3.5.1'
   gem 'byebug'
+  gem 'faker'
 
   group :test do
     gem 'dotenv-rails', '~> 2.2.1'
